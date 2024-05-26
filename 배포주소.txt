@@ -1,0 +1,24 @@
+< 텝 메뉴 >
+https://tabmenu-pet.web.app
+
+Project Console: https://console.firebase.google.com/project/tabmenu-pet/overview
+Hosting URL: https://tabmenu-pet.web.app
+
+-----------------------------------------------------------------------------------
+
+< 네이버 로그인 >
+https://naver-log-in.web.app/
+
+Project Console: https://console.firebase.google.com/project/naver-log-in/overview
+Hosting URL: https://naver-log-in.web.app
+
+-----------------------------------------------------------------------------------
+
+< To Do List - JS >
+https://to-do-list-with-js.web.app/
+
+Project Console: https://console.firebase.google.com/project/to-do-list-with-js/overview
+Hosting URL: https://to-do-list-with-js.web.app
+
+-----------------------------------------------------------------------------------
+
