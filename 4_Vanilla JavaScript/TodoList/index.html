@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="To Do List" />
+    <meta property="og:image" content="https://cdn.dribbble.com/users/23569/screenshots/1662078/media/1ace32e97ce2b5100d78c776922f4a31.png?resize=768x576&vertical=center"
+    />
+    <meta
+      property="og:description"
+      content="해야할 일들, 하고 있는 일들, 완료한 일들을 기록해보세요🧐"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Yomogi&display=swap" rel="stylesheet">
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <link rel="icon" href="./image/ToDoList-icon.png">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">To Do List</div>
+      <form
+        name="canvanform"
+        action="https://localhost:3000/canvan.js"
+        method="post"
+      >
+        <input type="text" placeholder="할 일을 입력하세요" />
+        <input type="submit" value="추가하기" />
+      </form>
+      <div class="blocks">
+        <div class="block">
+          <h2>⭐ To Do</h2> 
+          <div id="todo" class="list"></div>
+        </div>
+        <div class="block">
+          <h2>🤞 Doing</h2>
+          <div id="doing" class="list"></div>
+        </div>
+        <div class="block">
+          <h2>👌 Done</h2>
+          <div id="done" class="list"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
