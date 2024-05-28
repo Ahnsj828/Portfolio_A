@@ -1,7 +1,7 @@
 @import "reset.css";
 
 body {
-  background: url("./bg3.png") center center / cover no-repeat;
+  background: url("./image/bg3.png") center center / cover no-repeat;
   width: 100vw;
   height: 100vh;
   color: #fff;
