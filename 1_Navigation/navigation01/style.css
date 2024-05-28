@@ -41,9 +41,6 @@ body {
             color: #e23e08;
           }
         }
-        .menu {
-          display: none;
-        }
       }
     }
     #gnb {
@@ -100,6 +97,9 @@ body {
           }
         }
       }
+      .trigger {
+        display: none;
+      }
     }
   }
 }
@@ -107,73 +107,106 @@ body {
 @media (max-width: 1100px) {
   body {
     #header {
+      display: flex;
       .lnb {
-        display: flex;
+        /* display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 100%; */
+        padding-right: 60px;
         .logo {
-          display: flex;
+          /* display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: center; */
           img {
-            width: 40px;
+            /* width: 40px; */
           }
           h1 {
-            color: #37a089;
+            /* color: #37a089; */
           }
         }
         .lnb-list {
-          display: flex;
+          /* display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: center; */
           i {
-            margin-left: 20px;
+            /* margin-left: 20px;
             transition: all 0.3s;
             &:hover {
-              color: #37a089;
-            }
-          }
-          .menu {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 30px;
-            height: 30px;
-            margin-left: 20px;
-            gap: 3px;
-            span {
-              display: inline-block;
-              width: 30px;
-              height: 5px;
-              background: #fff;
-            }
-            span:nth-child(1) {
-              background: #f00;
-            }
-            span:nth-child(2) {
-              background: tomato;
-            }
-            span:nth-child(3) {
-              background: dodgerblue;
+              color: #37a089; */
             }
           }
         }
-      }
       #gnb {
-        position: absolute;
+        /* position: absolute;
         top: 10px;
         left: 15%;
         display: flex;
         width: auto;
         height: 95px;
         align-items: center;
+        background: gray; */
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid #f00;
+        .trigger {
+          display: flex;
+          position: absolute;
+          top: 35px;
+          right: 16.5%;
+          width: 2.7%;
+          height: 1.1rem;
+          z-index: 3;
+          span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 0.17rem;
+            border-radius: 0.18rem;
+            background: #fff;
+            transition: 0.3s;
+            &:nth-child(1) {
+              top: 0;
+            }
+            &:nth-child(2) {
+              top: 50%;
+            }
+            &:nth-child(3) {
+              top: 100%;
+            }
+          }
+          &.active span:nth-child(1) {
+            top: 50%;
+            transform: rotate(45deg);
+          }
+          &.active span:nth-child(2) {
+            opacity: 0;
+          }
+          &.active span:nth-child(3) {
+            top: 50%;
+            transform: rotate(-45deg);
+          }
+        }
         .gnb-list {
           display: flex;
           text-transform: uppercase;
           flex-direction: column;
+          position: absolute;
+          top: 0;
+          right: -180px;
+          background: gray;
+          width: 30%;
+          height: 100%;
+          justify-content: center;
+          text-align: center;
+          /* padding: 80px 20px 0 0; */
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          z-index: 2;
+        transition: 0.3s;
           li {
             margin-right: 30px;
             z-index: 1;
@@ -215,6 +248,10 @@ body {
               text-decoration: none;
               color: #fff;
             }
+          }
+          &.active {
+            right: 114px;
+            right: 0;
           }
         }
       }
