@@ -92,3 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// ==============================================
+
+window.addEventListener("scroll", function() {
+  var header = document.querySelector("header");
+  var headerHeight = header.offsetHeight; // 헤더의 높이
+  
+  if (window.pageYOffset >= 130) { // 스크롤이 100px 이상 내려갔을 때
+    header.style.background = "rgba(255, 247, 225, 0.5)"; // 헤더 배경 색상 변경
+  } else {
+    header.style.background = "transparent"; // 스크롤이 100px 이하로 올라갔을 때 원래 배경 색상으로 변경
+  }
+});
+
+// ==============================================
