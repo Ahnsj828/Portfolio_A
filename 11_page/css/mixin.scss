@@ -190,3 +190,32 @@
     margin-left: 1;
   }
 }
+@keyframes section-bg {
+  0% {
+    opacity: 0;
+    margin-left: -3rem;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes section-c {
+  0% {
+    opacity: 0;
+    right: 7rem;
+  }
+  5% {
+    opacity: 1;
+    right: 9.3rem;
+  }
+  95% {
+    opacity: 1;
+    right: 50.7rem;
+  }
+  100% {
+    opacity: 0;
+    right: 53rem;
+  }
+}
