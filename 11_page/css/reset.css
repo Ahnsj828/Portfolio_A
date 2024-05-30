@@ -30,4 +30,23 @@ a {
   font-family: "Nanum-S-N";
   src: url("../font/NanumSquareNeoOTF-Rg.otf") format("woff2");
 }
-
+@font-face {
+  font-family: "NanumSquareRound-R";
+  src: url("../font/NanumSquareRoundOTFR.otf") format("woff2");
+}
+@font-face {
+  font-family: "NanumSquareRound-L";
+  src: url("../font/NanumSquareRoundOTFL.otf") format("woff2");
+}
+@font-face {
+  font-family: "NanumSquareRound-B";
+  src: url("../font/NanumSquareRoundOTFB.otf") format("woff2");
+}
+@font-face {
+  font-family: "NanumBarunpenB";
+  src: url("../font/NanumBarunpenB.otf") format("woff2");
+}
+@font-face {
+  font-family: "NanumBarunpenR";
+  src: url("../font/NanumBarunpenR.otf") format("woff2");
+}
