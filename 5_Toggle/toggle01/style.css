@@ -87,24 +87,30 @@ body {
   }
   .toggle-wrapper:nth-child(3) {
     background: #87aade;
+    background: #EA8B8B;
   }
   .toggle-wrapper:nth-child(4) {
     background: #c5de87;
+    background: #D78BEA;
   }
   .toggle-wrapper:nth-child(5) {
     background: #87ded2;
+    background: #8D8BEA;
   }
   .toggle-wrapper:nth-child(6) {
     background: #c487de;
+    background: #8BB7EA;
   }
   .toggle-wrapper:nth-child(7) {
     background: #de8787;
+    background: #88cf8f;
   }
   .toggle-wrapper:nth-child(7) .toggle {
     transform: translate(-40px, 40px);
   }
   .toggle-wrapper:nth-child(8) {
     background: #decf87;
+    background: #8BEAD3;
   }
   .toggle-wrapper:nth-child(8) .toggle {
     transform: translate(-40px, 40px);
@@ -127,6 +133,7 @@ body {
 }
 
 #container1 {
+  background: #EACD8B;
   .normal {
     label{
       background: #af4c4c;
@@ -162,4 +169,10 @@ body {
       left: 69px;
     }
   }
+}
+
+#container2 {
+  background: #EAA88B;
+  .transparent{}
+  .name{}
 }
